@@ -1,0 +1,106 @@
+<faces-config>
+
+    <faces-config-extension>
+        <namespace-uri>http://www.tobysamples.com/control</namespace-uri>
+        <default-prefix>ts</default-prefix>
+    </faces-config-extension>
+   
+    <complex-type>
+    
+        <description>
+            A Ldap data source
+        </description>
+        <display-name>Ldap data source </display-name>
+        
+        <complex-id>com.tobysamples.ldap.datasource.LdapDataSource</complex-id>
+        <complex-class>com.tobysamples.ldap.datasource.LdapDataSource</complex-class>
+
+        <property>
+          <description>Ldap Query</description>
+          <display-name>Ldap Query</display-name>
+          <property-name>query</property-name>
+          <property-class>java.lang.String</property-class>
+          <property-extension>
+            <category>Ldap</category>
+            <allow-run-time-binding>true</allow-run-time-binding>
+            <required>true</required>
+          </property-extension>
+        </property>
+        <property>
+          <description>LDAP Domain</description>
+          <display-name>domain</display-name>
+          <property-name>domain</property-name>
+          <property-class>java.lang.String</property-class>
+          <property-extension>
+            <category>Ldap</category>
+            <allow-run-time-binding>true</allow-run-time-binding>
+            <required>false</required>
+          </property-extension>
+        </property>
+                <property>
+          <description>LDAP Url</description>
+          <display-name>ldapUrl</display-name>
+          <property-name>ldapUrl</property-name>
+          <property-class>java.lang.String</property-class>
+          <property-extension>
+            <category>Ldap</category>
+            <allow-run-time-binding>true</allow-run-time-binding>
+            <required>false</required>
+          </property-extension>
+        </property>
+        <property>
+          <description>Username</description>
+          <display-name>username</display-name>
+          <property-name>username</property-name>
+          <property-class>java.lang.String</property-class>
+          <property-extension>
+            <category>Ldap</category>
+            <allow-run-time-binding>true</allow-run-time-binding>
+            <required>true</required>
+          </property-extension>
+        </property>
+        <property>
+          <description>Password</description>
+          <display-name>password</display-name>
+          <property-name>pass</property-name>
+          <property-class>java.lang.String</property-class>
+          <property-extension>
+            <category>Ldap</category>
+            <allow-run-time-binding>true</allow-run-time-binding>
+            <required>true</required>
+          </property-extension>
+        </property> 
+                <property>
+          <description>searchRoot</description>
+          <display-name>searchRoot</display-name>
+          <property-name>searchRoot</property-name>
+          <property-class>java.lang.String</property-class>
+          <property-extension>
+            <category>Ldap</category>
+            <allow-run-time-binding>true</allow-run-time-binding>
+            <required>true</required>
+          </property-extension>
+        </property>  
+            <property>
+                    <description>fields</description>
+          <display-name>fields</display-name>
+      <property-name>fields</property-name>
+      <property-class>java.util.List</property-class>
+      <property-extension>
+                  <category>Ldap</category>
+            <allow-run-time-binding>true</allow-run-time-binding>
+            <required>true</required>
+        <property-item-class>java.lang.String</property-item-class>
+        <collection-property>true</collection-property>
+      </property-extension>
+    </property>
+        <group-type-ref>com.ibm.xsp.model.group.DataSource</group-type-ref>
+        
+        <complex-extension>
+            <tag-name>LdapDataSource</tag-name>
+            <base-complex-id>dataInterface</base-complex-id>
+        </complex-extension>
+                
+    </complex-type>
+                 
+</faces-config>
