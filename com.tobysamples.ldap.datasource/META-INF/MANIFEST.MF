@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Datasource Plug-in
 Bundle-SymbolicName: com.tobysamples.ldap.datasource;singleton:=true
-Bundle-Version: 1.0.2
+Bundle-Version: 1.0.3
 Bundle-Activator: com.tobysamples.ldap.datasource.Activator
 Bundle-Vendor: Toby Samples
 Require-Bundle: org.eclipse.core.runtime,
